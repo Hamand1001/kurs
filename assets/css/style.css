@@ -70,7 +70,7 @@
     height: 80vh;
     max-width: 100%;
     width: 100%;
-    position: relative;
+    
 }
 .banner-content{
    padding-top: 65px;
@@ -121,12 +121,17 @@
 .main-img{
     max-width: 100%;
 }
-.img-control{
+.slider{
     overflow: hidden;
     height: 560px;
+    width: 570px;
+    position: relative;
+}
+.slides{
+    height: 560px;
+    width: 570px;
     position: absolute;
-    top: 210px;
-    left: 1000px;
+    top: 410px;
 }
 .dots{
     display: flex;

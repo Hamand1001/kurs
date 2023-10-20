@@ -56,8 +56,8 @@ accordion.forEach(element => {
     })
 })
 
-const nextBtn=document.querySelector('.back')
-const backBtn=document.querySelector('.next')
+const nextBtn=document.querySelector('.next')
+const backBtn=document.querySelector('.back')
 const slides = document.querySelector('.slides')
 const countSl = document.querySelectorAll('.slide').length
 
@@ -69,16 +69,18 @@ nextBtn.addEventListener('click',()=>{
   top123 = (top123 - height);
   if(top123> -(countSl*height)){
       slides.style.top = top123 + 'px'
+      console.log(top123)
   }else{
       top123 = 210;
-      slides.style.top = '0px'
+      slides.style.top = '210px'
   }
 })
 
 
 backBtn.addEventListener('click',()=>
-{top123 = -(countSl * height);
-  if(top123==0){
+{
+  top123 = -(countSl * height);
+  if(top123==210){
       top123 = -(countSl*height - height);
       slides.style.top = top123 + 'px'
   }else if(top>= -(countSl*height)){
